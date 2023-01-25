@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <meta charset=utf-8/>
     <title>hw-02</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 
@@ -79,11 +80,95 @@
              <li>Column: Attribute</li>
         </ul>
     </div>
+
+
+    <div id ="task-abtraction">
+
+      <h1>Task Abtraction</h1>
+
+      <div class="flex-container">
+        <div id="left-panel" class="col">
+
+          <img src="img/vis1.png" width="100%"/>
+
+          <p class="blue-text">High-level task: Consume - Present. </p>
+          <p>The goal of the visualization
+          is clearly to show that the last 3 days have had an above average temperature
+          for the given month. Since there is a clear goal and intent with the
+          visualization, we know it must be present.</p>
+
+          <p class="blue-text">Medium-level task: Search - Browse. </p>
+          <p>The target is
+          not known to users - and must be found by examining the plot for its outliers.
+          The location of the target is known - as users of the plot (when it was released)
+          would be aware of the time of month and where to find it.</p>
+
+          <p class="blue-text">Low-level task: Query - Identify. </p>
+          <p>The goal is to identify the extreme higher tempetures in the last 3 days.</p>
+
+          <p class="blue-text">Target: All Data - Outliers. </p>
+          <p>The target is the 3 day period of outliers
+          in temperatures during the last 3 days.</p>
+
+        </div>
+        <div id="right-panel" class="col">
+
+          <img src="img/vis2.png" width="100%" />
+
+          <p class="blue-text">High-level task: Consume - Present. </p>
+          <p>The goal of the visualization
+          is clearly to show that the rate of abnormally high mean temperature
+          is increasing in Seattle and Portland. Since there is a clear intent
+          and purpose, the high-level task is to present.</p>
+
+          <p class="blue-text">Medium-level task: Search - Locate.</p>
+          <p>The task
+          is to locate the instances where the temperature is 20 degres above the
+          mean daily average. The title of the graph makes it clear that the
+          target is known.</p>
+
+          <p class="blue-text">Low-level task: Query - Compare: </p>
+          <p>The goal of the
+          visualization is to compare the records in Seattle to those in Portland.
+          It is clear that the two share a similar relationship.</p>
+
+          <p class="blue-text">Target: Similarity. </p>
+          <p>The target of the visualization
+          is the similar pattern between the two states. This is to show the overall
+          trend of temperatures increasing in the area.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div id ="decoration">
+      <div class="flex-container">
+        <svg width="100" height="100">
+          <circle class="circle" cx="50" cy="50" r="40" />
+        </svg>
+        <svg width="100" height="100">
+          <rect class="square" width="100" height="100" />
+        </svg>
+        <svg width="100" height="100">
+          <circle class="circle" cx="50" cy="50" r="40" />
+        </svg>
+        <svg width="100" height="100">
+          <rect class="square" width="100" height="100" />
+        </svg>
+        <svg width="100" height="100">
+          <circle class="circle" cx="50" cy="50" r="40" />
+        </svg>
+      </div>
+    </div>
+
+    <h3> Acknowledgements </h3>
+
     <div id = "Acknowledgements">
-        <h1> Acknowledgements </h1>
         <ul>
             <li> <a href="https://www.w3schools.com/html/html_tables.asp"> Table Info</a> </li>
         </ul>
+    </div>
+    
 </body>
 
 </html>
